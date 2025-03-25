@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do Header */
+
+header{
+    width: 100%;
+    padding: 40px 0 ;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+}
+
+header .menu-desktop nav ul li a:before,
+header .menu-desktop nav ul li a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  transition: 0.5s;
+}
+header .menu-desktop nav ul li a:after {
+  left: 0;
+  bottom: -10px;
+}
+header .menu-desktop nav ul li a:before {
+  right: 0;
+  top: -10px;
+}
+header .menu-desktop nav ul li a:hover {
+  color: #ffffff;
+}
+header .menu-desktop nav ul li a:hover:after,
+header .menu-desktop nav ul li a:hover:before {
+  width: 100%;
+}
+
+
+
+ header a button{
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+   

@@ -1,50 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* Estilo Geral */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-body{
-    background-color: #000;
+body {
+  /* background-color: #000;  */
 }
 
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Estilo do Header */
 
-header{
-    width: 100%;
-    padding: 40px 0 ;
+header {
+  width: 100%;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-header .interface{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header .interface {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-header .menu-desktop nav ul{
-    list-style-type: none;
+header .menu-desktop nav ul {
+  list-style-type: none;
 }
 
-
-header .menu-desktop nav ul li{
-    display: inline-block;
-    margin: 0 40px;
+header .menu-desktop nav ul li {
+  display: inline-block;
+  margin: 0 40px;
 }
 
 header .menu-desktop nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 16px;
 }
 
 header .menu-desktop nav ul li a:before,
@@ -72,17 +74,118 @@ header .menu-desktop nav ul li a:hover:before {
   width: 100%;
 }
 
-
-
- header a button{
-    width: 140px;
-    height: 50px;
-    font-size: 16px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
+a button {
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
 }
 
+/* Estilo da Apresentação */
 
-   
+section.apresentacao {
+  height: 100vh;
+  background-image: url(img/foto-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.apresentacao .interface {
+  padding: 80px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.apresentacao .texto-apresentacao h1 {
+  font-size: 4em;
+  line-height: 70px;
+  font-weight: 300;
+}
+
+.apresentacao .texto-apresentacao h1 span {
+  display: block;
+  font-weight: 800;
+}
+
+.apresentacao .texto-apresentacao p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+/* Estilo dos Beneficios */
+section.beneficios {
+  padding: 35px 0;
+}
+
+section.beneficios h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+section.beneficios .interface {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.beneficios-box {
+  /* background-color: red; */
+  padding: 30px;
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
+}
+
+i{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* Desconto estilo */
+
+section.desconto{
+  height: 400px;
+  background-image: url(img/pexels-riciardus-307006.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.desconto > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.desconto span{
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.desconto h3{
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.desconto p{
+  font-size: 30px;
+  font-weight: 300;
+}
+

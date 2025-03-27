@@ -88,11 +88,12 @@ a button {
 /* Estilo da Apresentação */
 
 section.apresentacao {
-  height: 100vh;
+  height: 98vh;
   background-image: url(img/foto-inicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -188,4 +189,147 @@ section.desconto{
   font-size: 30px;
   font-weight: 300;
 }
+
+/* Estilo dos paises */
+section.destinos{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+section.destinos .interface{
+  max-width: 900px; 
+  margin: auto; 
+ padding: 50px 20px; 
+  text-align: center; 
+}
+
+section.destinos .interface h2{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.destinos-box{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.destino-pais{
+  width: 300px;
+}
+.destino-pais img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+
+}
+
+
+/* Galeria estilos */
+
+section.galeria h2{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.galeria-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.galeria-box img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.galeria-box img:hover{
+  transform: scale(1.1);
+}
+
+
+/* estilo do contato */
+
+section.contato{
+  margin-top: 40px;
+  background-image: url(img/contato.jpg);
+  background-attachment: fixed;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 20px;
+}
+
+section.contato h2{
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+.contato-box{
+  max-width: 500px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input{
+  font-size: 16px;
+  padding: 20px;
+}
+
+input, textarea{
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.contato-box button{
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer
+}
+
+
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* margin-top: 20px; */
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+
+}
+
 
